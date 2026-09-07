@@ -9,7 +9,7 @@ class RutinaController extends Controller
 {
     public function index()
     {
-        return response()->json(Rutina::with('ejercicio')->get());
+        return response()->json(Rutina::with('ejercicio')->paginate(10));
     }
 
     public function store(Request $request)

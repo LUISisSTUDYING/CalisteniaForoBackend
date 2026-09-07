@@ -9,7 +9,7 @@ class EjercicioController extends Controller
 {
     public function index()
     {
-        return response()->json(Ejercicio::all());
+        return response()->json(Ejercicio::paginate(10));
     }
 
     public function store(Request $request)
