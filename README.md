@@ -2,7 +2,7 @@
 
 Esta es la API REST para la plataforma Calistenia Tarija, construida con **Laravel 12**, **SQLite** y protegida con **Laravel Sanctum**.
 
-## 🚀 Guía de Instalación
+## Guía de Instalación
 
 Sigue estos pasos para levantar el backend en tu entorno local:
 
@@ -54,7 +54,7 @@ php artisan serve
 
 ---
 
-## 🔑 Credenciales de Prueba (Seeders)
+## Credenciales de Prueba (Seeders)
 
 La base de datos se inicializa con 15 ejercicios, 15 rutinas y 2 usuarios para que puedas probar la API de inmediato:
 
