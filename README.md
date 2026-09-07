@@ -27,7 +27,7 @@ cp .env.example .env
 ```
 
 ### 3. Configuración de Base de Datos
-Abre el archivo `.env` que acabas de crear y asegúrate de que la configuración de la base de datos apunte a SQLite con la ruta absoluta correcta de tu sistema:
+Abre el archivo `.env` que acabas de crear y asegúrate de que la configuracion de la base de datos apunte a SQLite con la ruta absoluta correcta de tu sistema:
 
 ```env
 DB_CONNECTION=sqlite
