@@ -7,9 +7,15 @@ use Illuminate\Http\Request;
 
 class EjercicioController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        return response()->json(Ejercicio::paginate(10));
+        $query = Ejercicio::query();
+
+        if ($request->has('search')) {
+            $query->where('nombre', 'like', '%' . $request->search . '%');
+        }
+
+        return response()->json($query->paginate(10));
     }
 
     public function store(Request $request)
